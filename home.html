@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>NQuestões</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+		<link href="lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
+		<link href="assets/style.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+				<script type="text/javascript" src="lib/jquery.bxslider/plugins/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="lib/utils.js"></script>
+ 		<script type="text/javascript" src="lib/elgg.api.js"></script>
+ 		<script type="text/javascript" src="lib/home.js"></script>
+ 		
+	
+	</head>
+	<body>
+
+		<img src="assets/graphics/logo.png" />
+		
+		<div id="msg" class="alert" style="display:none">
+  			<button type="button" class="close" data-dismiss="alert">&times;</button>
+  			<label>&nbsp;</label>
+		</div>
+
+		<form class="form-horizontal" id="formLogin">
+		  <div class="control-group">
+		    <label class="control-label" for="inputEmail">Email</label>
+		    <div class="controls">
+		      <input type="text" id="inputEmail" name="email" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="control-group">	
+		    <label class="control-label" for="inputPassword">Password</label>
+		    <div class="controls">
+		      <input type="password" id="inputPassword" name="password" placeholder="Password">
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <div class="controls">
+		      <button type="submit" class="btn">Entrar</button> <a hre="http://nquestoes.com.br" target="_blank">Não sou cadastrado.</a>
+		    </div>
+		  </div>
+		</form>
+
+		<form class="form-horizontal" id="formQuestoes" style="display:none">
+		  <div class="control-group">
+		    <label class="control-label" for="selectMateria">Matéria</label>
+		    <div class="controls">
+		      <select id="selectMateria" name="materia">
+		      </select>
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <label class="control-label" for="selectBanca">Bancas</label>
+		    <div class="controls">
+		      <select id="selectBanca" name="banca">
+		      </select>
+		    </div>
+		  </div>
+		  <div class="control-group">
+		    <div class="controls">
+		      <button type="submit" class="btn">Pesquisar</button>
+		    </div>
+		  </div>
+		</form>
+
+		<div id="divQuestoes">
+			<ul id="ulQuestoes">
+			</ul>
+		</div>
+
+	</body>
+</html>
